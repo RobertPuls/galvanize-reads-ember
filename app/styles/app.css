@@ -1,0 +1,83 @@
+body {
+  padding-top: 5%;
+}
+
+span {
+  display: flex;
+}
+
+button {
+  margin: 1%;
+  width: 100px;
+  height: 40px;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.logo {
+  width: 10%;
+  height: 10%;
+  margin-right: 3%;
+}
+
+#bookCover {
+  width: 20%;
+  height: 20%;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  padding-top: 1%;
+  padding-left: 1%;
+  margin: -1% -1%;
+  display: flex;
+  border-bottom: lightgrey solid 1px;
+}
+
+.main {
+  padding-bottom: 7%;
+  margin: 7%;
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.books {
+  border-bottom: lightgrey solid 1px;
+}
+
+
+.title {
+  font-size: 3em;
+}
+
+.link {
+  padding: 5% 0 2%;
+  width: 50%;
+  text-align: center;
+  border: black solid 1px;
+}
+
+.bookTitle {
+  /*display: inline;*/
+  font-size: 1.8em;
+}
+
+.bookInfo {
+  list-style-type: none;
+}
+
+.titleLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,25 @@
+
+{{#each model as |book|}}
+
+  {{#link-to "book.show" book}}
+    <section id="bookItem" class="main books">
+      <img id="bookCover" class="" src="{{book.cover}}" alt="">
+      <div id="bookInfo" class="">
+        <ul class="bookInfo">
+          <li class="titleLine">
+            <h5 class="bookTitle">{{book.name}}</h5>
+            <span class="">
+              <button value="{{book_id}}">Edit</button><button value="{{book_id}}">Remove</button>
+            </span>
+          </li>
+          <li>By {{#each book.authors as |author|}} {{author.first_name}} {{author.last_name}} {{/each}}</li>
+          <li>{{book.genre}}</li>
+          <li><p>{{book.desc}}</p></li>
+        </ul>
+      </div>
+    </section>
+  {{/link-to}}
+{{/each}}
+
+
+{{outlet}}

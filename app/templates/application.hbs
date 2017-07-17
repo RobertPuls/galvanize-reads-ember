@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+{{#link-to "home"}}
+  <header>
+    <img class="logo" src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/8552631/leather_book_preview.png">
+    <h1 class="title">Galvanize Reads</h1>
+  </header>
+{{/link-to}}
+<body>
+  {{outlet}}
+</body>
